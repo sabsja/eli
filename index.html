@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Eli!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffd6d6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        /* Enhanced pattern background */
+        .pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #ffd6d6;
+            overflow: hidden;
+        }
+        
+        .line {
+            position: absolute;
+            height: 5px;
+            width: 50px;
+            background-color: rgba(150, 150, 150, 0.3);
+            border-radius: 2px;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 30px 0;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .from {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .message-button {
+            background-color: #eab6b6;
+            color: #333;
+            padding: 12px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 20px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .message-button:hover {
+            background-color: #d99494;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .message-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        
+        .messages {
+            margin-top: 30px;
+            display: none; /* Initially hide messages */
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .message {
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s;
+        }
+        
+        .sender {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .content {
+            background-color: rgba(100, 100, 100, 0.2);
+            padding: 12px;
+            border-radius: 8px;
+            line-height: 1.5;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 12px;
+            padding-bottom: 20px;
+        }
+        
+        .sparkle {
+            font-size: 22px;
+            display: inline-block;
+            animation: sparkle 1.5s infinite alternate;
+            position: relative;
+        }
+        
+        .sparkle:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .sparkle:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes sparkle {
+            0% {
+                transform: scale(1) rotate(0deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1.2) rotate(20deg);
+                opacity: 1;
+            }
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .title {
+                font-size: 20px;
+            }
+            
+            .message-button {
+                padding: 10px;
+                font-size: 14px;
+            }
+            
+            .content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pattern" id="pattern"></div>
+        
+        <div class="title">
+            <span class="sparkle">✨</span> HAPPIESTT BIRTHDAYY ELI!! <span class="sparkle">✨</span>
+        </div>
+        
+        <div class="from">
+            From: VAKENGAME<br>
+            April 9, 2025
+        </div>
+        
+        <div id="messageButton" class="message-button">
+            Pindotin mo akooh!! 😝✨
+        </div>
+        
+        <div id="messageContainer" class="messages">
+            <div class="message">
+                <div class="sender">Viien:</div>
+                <div class="content">
+                    Hi, happy birthday, Eli! Sana naging masaya ka ngayong araw, and I hope na-enjoy mo tong araw na ito at hindi ka na-awkward-an. Sorry kung ngayon lang ako nakabati, and I just want to let you know that I'm wishing you all the best.
+                </div>
+            </div>
+            
+            <div class="message">
+                <div class="sender">Andeng:</div>
+                <div class="content">
+                    Hbd te! Thanksie cmula g9 ang friendly mo, tas pinansin mo goh nun ket nonchalant, super friendly and thanksie sa mga advices mo and dko inexpect na nagpapaturo ka saken mag report ket parang diman aq maganda mag report huhu, thanksie kase may nakikita kang di ko nakikita sa self ko hehe muaAahh!
+                </div>
+            </div>
+            
+            <div class="message">
+                <div class="sender">Kev:</div>
+                <div class="content"></div>
+            </div>
+            
+            <div class="message">
+                <div class="sender">Elieza:</div>
+                <div class="content"></div>
+            </div>
+            
+            <div class="message">
+                <div class="sender">Nix:</div>
+                <div class="content">
+                    Happy birthday Eli. Wish you all the best, happiness and love that you deserve. Forever thankful for your existence coz wlang VAKENGAME kung wla ikaww🫶 we love you so much Eli. Happiest birthday 🥰🫶
+                </div>
+            </div>
+            
+            <div class="message">
+                <div class="sender">Gre:</div>
+                <div class="content">
+                    Hi Eli, happy happy birthday! Sana nag enjoy ka kanina. Always remember here lang kami lagi for you. Goodluck sa studies and take care of urself. We luv u as always!!
+                </div>
+            </div>
+            
+            <div class="message">
+                <div class="sender">Aqui:</div>
+                <div class="content"></div>
+            </div>
+            
+            <div class="message">
+                <div class="sender">Micay:</div>
+                <div class="content">
+                    Hi my baby Eli, happy happy birthday. Wishing you all the best in this world, hoping for your happiness and good health. Always stay positive, kind, jolly, smart and beautiful person. We love you so much and we're always here for you no matter what. Happy birthday again my baby Eli 🥰🫶
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            ( loovielooots! ❤️ )
+        </div>
+    </div>
+
+    <script>
+        // Create background pattern with random lines
+        function createPattern() {
+            const pattern = document.getElementById('pattern');
+            const lineCount = 50; // Number of lines to generate
+            
+            for (let i = 0; i < lineCount; i++) {
+                const line = document.createElement('div');
+                line.className = 'line';
+                
+                // Random position
+                const top = Math.random() * 100;
+                const left = Math.random() * 100;
+                
+                // Random rotation
+                const rotation = Math.random() * 180;
+                
+                // Random width
+                const width = 20 + Math.random() * 60;
+                
+                line.style.top = `${top}%`;
+                line.style.left = `${left}%`;
+                line.style.transform = `rotate(${rotation}deg)`;
+                line.style.width = `${width}px`;
+                
+                pattern.appendChild(line);
+            }
+        }
+        
+        // Get the button and message container elements
+        const messageButton = document.getElementById('messageButton');
+        const messageContainer = document.getElementById('messageContainer');
+        const messages = document.querySelectorAll('.message');
+        
+        // Add click event listener to the button
+        messageButton.addEventListener('click', function() {
+            // Toggle the display of messages
+            if (messageContainer.style.display === 'block') {
+                messageContainer.style.opacity = 0;
+                setTimeout(() => {
+                    messageContainer.style.display = 'none';
+                    messageButton.textContent = 'Pindotin mo akohi!! 😝✨';
+                }, 500);
+            } else {
+                messageContainer.style.display = 'block';
+                setTimeout(() => {
+                    messageContainer.style.opacity = 1;
+                    messageButton.textContent = 'bulaga 🙈';
+                    
+                    // Animate each message with delay
+                    messages.forEach((message, index) => {
+                        setTimeout(() => {
+                            message.style.opacity = 1;
+                            message.style.transform = 'translateY(0)';
+                        }, 100 * index);
+                    });
+                }, 10);
+            }
+        });
+        
+        // Initialize the pattern on page load
+        window.addEventListener('load', createPattern);
+    </script>
+</body>
+</html>
